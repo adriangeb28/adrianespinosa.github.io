@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adrián Gustavo Espinosa Barreto</title>
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#111111;
+            color:#f5f5f5;
+            font-family:'Space Grotesk', sans-serif;
+            overflow-x:hidden;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        /* HERO */
+
+        .hero{
+
+            width:100%;
+            min-height:100vh;
+
+            padding:80px 8%;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+
+            background:#111111;
+        }
+
+        .top-bar{
+
+            width:100%;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            font-size:12px;
+            letter-spacing:4px;
+
+            color:#8c8c8c;
+        }
+
+        .main-content{
+
+            width:100%;
+
+            display:grid;
+            grid-template-columns:1.2fr 1fr;
+
+            gap:80px;
+
+            align-items:center;
+
+            margin-top:60px;
+            margin-bottom:60px;
+        }
+
+        .left-side{
+
+            display:flex;
+            flex-direction:column;
+            gap:25px;
+        }
+
+        .name{
+
+            font-family:'Bebas Neue', sans-serif;
+
+            font-size:140px;
+
+            line-height:0.9;
+
+            letter-spacing:3px;
+
+            color:#f3f3f3;
+        }
+
+        .mini-line{
+
+            width:120px;
+            height:2px;
+
+            background:#d1a15f;
+        }
+
+        .career{
+
+            font-size:15px;
+
+            letter-spacing:5px;
+
+            color:#d1a15f;
+        }
+
+        .right-side{
+
+            font-size:18px;
+
+            line-height:2;
+
+            color:#cfcfcf;
+
+            max-width:600px;
+        }
+
+        /* FRASE */
+
+        .quote-section{
+
+            width:100%;
+
+            padding:120px 10%;
+
+            background:#191919;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .quote{
+
+            font-size:42px;
+
+            line-height:1.5;
+
+            max-width:1000px;
+
+            font-weight:300;
+
+            color:#e8e8e8;
+        }
+
+        /* GALERIA */
+
+        .gallery{
+
+            width:100%;
+
+            padding:40px;
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(300px,1fr));
+
+            gap:18px;
+
+            background:#111111;
+        }
+
+        .gallery img{
+
+            width:100%;
+            height:460px;
+
+            object-fit:cover;
+
+            transition:0.4s ease;
+
+            filter:grayscale(8%);
+        }
+
+        .gallery img:hover{
+
+            transform:scale(1.015);
+
+            opacity:0.92;
+        }
+
+        /* FOOTER */
+
+        footer{
+
+            width:100%;
+
+            padding:60px;
+
+            text-align:center;
+
+            font-size:11px;
+
+            letter-spacing:6px;
+
+            color:#777;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:1000px){
+
+            .main-content{
+
+                grid-template-columns:1fr;
+
+                gap:50px;
+            }
+
+            .name{
+
+                font-size:95px;
+            }
+
+            .quote{
+
+                font-size:30px;
+            }
+
+        }
+
+        @media(max-width:600px){
+
+            .name{
+
+                font-size:65px;
+            }
+
+            .quote{
+
+                font-size:22px;
+            }
+
+            .right-side{
+
+                font-size:16px;
+            }
+
+            .gallery{
+
+                padding:20px;
+            }
+
+            .gallery img{
+
+                height:380px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="top-bar">
+
+            <div>
+                BOGOTÁ · COLOMBIA
+            </div>
+
+            <div>
+                VISUAL ARCHIVE
+            </div>
+
+        </div>
+
+        <div class="main-content">
+
+            <!-- IZQUIERDA -->
+
+            <div class="left-side">
+
+                <div class="name">
+                    ADRIÁN<br>
+                    ESPINOSA
+                </div>
+
+                <div class="mini-line"></div>
+
+                <div class="career">
+                    INGENIERÍA DE SISTEMAS
+                </div>
+
+            </div>
+
+            <!-- DERECHA -->
+
+            <div class="right-side">
+
+                Mi nombre es Adrián Espinosa. Fui estudiante foráneo y actualmente soy ingeniero de sistemas.
+                Soy alguien que ha tenido que adaptarse a nuevos espacios, ritmos y formas de ver la vida desde muy pequeño.
+                Estar lejos de lo familiar me ha llevado a observar con más atención lo que me rodea, encontrando detalles
+                que antes podían pasar desapercibidos.
+
+                <br><br>
+
+                Mi forma de ver el mundo está marcada por ese cambio constante: calles desconocidas, rutinas nuevas
+                y momentos cotidianos que, en medio del caos, empiezan a revelar cierta belleza.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE CENTRAL -->
+
+    <section class="quote-section">
+
+        <div class="quote">
+            “A través de la fotografía, intento transformar lo cotidiano en algo significativo.”
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section class="gallery">
+
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+        <img src="foto6.jpg">
+        <img src="foto7.jpg">
+        <img src="foto8.jpg">
+        <img src="foto9.jpg">
+        <img src="foto10.jpg">
+
+        <img src="foto11.jpg">
+        <img src="foto12.jpg">
+        <img src="foto13.jpg">
+        <img src="foto14.jpg">
+        <img src="foto15.jpg">
+        <img src="foto16.jpg">
+        <img src="foto17.jpg">
+        <img src="foto18.jpg">
+        <img src="foto19.jpg">
+        <img src="foto20.jpg">
+
+        <img src="foto21.jpg">
+        <img src="foto22.jpg">
+        <img src="foto23.jpg">
+        <img src="foto24.jpg">
+        <img src="foto25.jpg">
+        <img src="foto26.jpg">
+        <img src="foto27.jpg">
+        <img src="foto28.jpg">
+        <img src="foto29.jpg">
+        <img src="foto30.jpg">
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        ADRIÁN GUSTAVO ESPINOSA BARRETO
+    </footer>
+
+</body>
+
+</html>
